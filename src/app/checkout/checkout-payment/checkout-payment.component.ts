@@ -44,7 +44,7 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
   ) {}
 
   ngAfterViewInit() {
-    this.stripe = Stripe('pk_test_2PZ84pFKu2MddUgGDG521v9m00SlLWySIR');
+    this.stripe = Stripe('pk_test_w4gUnaKl7tehFQEJJF6Heqyp00o7RpbFpC');
     const elements = this.stripe.elements();
 
     this.cardNumber = elements.create('cardNumber');

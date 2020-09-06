@@ -27,7 +27,7 @@ export class BasketService {
 
   createPaymentIntent() {
     return this.http
-      .post(this.baseUrl + 'payments/' + this.getCurrentBasketValue().id, {})
+      .post(this.baseUrl + 'payments/' + this.getCurrentBasketValue().cid, {})
       .pipe(
         map((basket: IBasket) => {
           this.basketSource.next(basket);
